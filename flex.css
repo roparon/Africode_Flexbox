@@ -16,7 +16,7 @@ flex-shrink: 2;
 .item:nth-child(2){
     flex-shrink: 3;
 }
-/* short-hand for flex properties */
+/* short-hand for flex properties~ */
 /* .item{
     background-color: blue;
     flex:1 1 200px;
