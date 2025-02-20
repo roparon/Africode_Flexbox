@@ -1,0 +1,35 @@
+/* .grid-container{ */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 100px auto;
+    gap: 5px;
+}
+.grid-child{
+    background-color: brown;
+    padding: 10px;
+    color: white;
+} */
+
+.simple-page{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+
+}
+.header{
+    background-color: limegreen;
+    padding: 20px;
+    color: white;
+}
+.content{
+    background-color: #f0f0f0;
+    padding: 20px;
+    min-height: 300px;
+}
+.footer{
+    background-color: #34495e;
+    padding: 20px;
+    color: white;
+}
