@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Moving Ball</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 900px;
+            height: 400px;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            animation: moveBall 15s linear infinite, changeColor 1s infinite;
+        }
+
+        @keyframes moveBall {
+            0% { top: 0; left: 0; }
+            15% { top: 0; left: 850px; }
+            30% { top: 350px; left: 850px; }
+            45% { top: 350px; left: 0; }
+            60% { top: 0; left: 450px; }
+            75% { top: 175px; left: 0; }
+            100% { top: 175px; left: 450px; }
+        }
+
+        @keyframes changeColor {
+            0% { background-color: red; }
+            10% { background-color: blue; }
+            30% { background-color: pink; }
+            70% { background-color: green; }
+            80% { background-color: yellow; }
+            100% { background-color: blue; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
