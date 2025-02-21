@@ -1,0 +1,114 @@
+/* step 1: Basic setup and typography */
+body{
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    min-width: 1200px;
+    margin: 0;
+    padding: 20px;
+}
+.lesson-section{
+    margin-bottom: 40px;
+}
+/* Step 2: Code display styling */
+.code{
+    background-color: #f8f9fa;
+    padding: 2px;
+    border-radius: 4px;
+    font-family: monospace;
+    margin: 15px;
+    font-family: monospace;
+    white-space: pre;
+}
+.code-block{
+    background-color: aliceblue
+    ;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-family: monospace;
+    white-space: pre;
+}
+/* Step 3: Base grid container */
+.demo-grid{
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+    background: #f0f0f0;
+    padding: 10px;
+}
+/* Step 4: Grid Items Base Stylings */
+.demo-grid > div{
+    background: #4a90e2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold
+}
+/* Step 5: Grid  Columns Layout*/
+.columns-demo{
+    grid-template-columns: minmax(100px, 200px) 1fr 2fr;
+}
+/* Step 6: Grid row layout */
+.rows-demo{
+    grid-template-rows: 100px minmax(50px, auto) 150px;
+}
+/* Step 7: Grid Areas Layout */
+.areas-demo{
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+        grid-template-columns: 200px 1fr 1fr;
+}
+/* Step 8: Grid Areas components */
+.areas-demo .header{
+    grid-area: header;
+    background: #2ecc71;
+}
+.areas-demo .sidebar{
+    grid-area: sidebar;
+    background: #e74c3c;
+}
+.areas-demo .main{
+    grid-area: main;
+    background: #f1c40f;
+}
+.areas-demo .footer{
+    grid-area: footer;
+    background: #9b59b6;
+}
+/* Repeat Fuction Demo */
+.repeat-demo{
+    grid-template-columns: repeat(3, 1fr);
+    /* repeat equal columns */
+}
+/* Auto-fit-Demo */
+.auto-fit-demo{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* auto-fit 100px columns */
+}
+/* Autofill-Demo */
+.auto-fill-demo{
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* auto-fill 100px columns */
+}
+
+/* Media Queries - Responsive for all demos */
+/* @media (max-width: 768px){
+    .colums-demo{
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    }
+    .areas-demo{
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+            grid-template-columns: 1fr;
+    }
+    .fit-content-demo{
+        grid-template-columns: 1fr;
+    } */

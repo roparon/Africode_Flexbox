@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofill Vs Autofit</title>
+    <style>
+        .container1 {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-rows: 100px;
+            border: 1px solid black;
+            margin: 4px;
+        }
+
+        .container2 {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-template-rows: 100px;
+            border: 1px solid rgb(213, 8, 8);
+            margin: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Autofill Vs Autofit</h1>
+    <div class="container1">
+        <div style="background-color: aqua;">Autofit</div>
+        <div style="background-color: rgb(224, 38, 21);">Autofit</div>
+        <div style="background-color: rgb(8, 115, 115);">Autofit</div>
+        <div style="background-color: rgb(169, 111, 179);">Autofit</div>
+    </div>
+    <div class="container2">
+    <div style="background-color: rgb(46, 182, 182);">Autofill</div>
+    <div style="background-color: rgb(46, 14, 161);">Autofill</div>
+    <div style="background-color: rgb(1, 17, 4);">Autofill</div>
+    <div style="background-color: rgb(240, 240, 6);">Autofill</div>
+    </div>
+</body>
+</html>
