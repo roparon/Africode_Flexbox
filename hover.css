@@ -1,0 +1,137 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 20px;
+}
+.pulse-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #ff0044;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  animation: pulse-animation 2s infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 68, 1), 0 0 20px rgba(255, 0, 68, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 68, 1), 0 0 40px rgba(255, 0, 68, 0.8);
+    transform: scale(1.2);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 0, 68, 1), 0 0 20px rgba(255, 0, 68, 0.5);
+    transform: scale(1);
+  }
+}
+.gradient-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff007f, #00b3ff);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 179, 255, 0.7), 0 0 30px rgba(255, 0, 127, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 179, 255, 1), 0 0 60px rgba(255, 0, 127, 0.8);
+}
+
+.neon-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #ff0080;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.5), 0 0 20px rgba(255, 0, 128, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-btn:hover {
+  color: #fff;
+  border: 2px solid #00ff99;
+  box-shadow: 0 0 20px rgba(0, 255, 153, 1), 0 0 40px rgba(0, 255, 153, 0.8);
+}
+
+.neon-btn {
+  animation: color-cycle 3s infinite alternate;
+}
+
+@keyframes color-cycle {
+  0% {
+    border-color: #ff0080;
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.5), 0 0 20px rgba(255, 0, 128, 0.3);
+  }
+  25% {
+    border-color: #00ff99;
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.5), 0 0 20px rgba(0, 255, 153, 0.3);
+  }
+  50% {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5), 0 0 20px rgba(255, 204, 0, 0.3);
+  }
+  75% {
+    border-color: #0000ff; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5), 0 0 20px rgba(0, 0, 255, 0.3);
+  }
+  100% {
+    border-color: #8000ff; 
+    box-shadow: 0 0 10px rgba(128, 0, 255, 0.5), 0 0 20px rgba(128, 0, 255, 0.3);
+  }
+}
+
+.glow-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333; 
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-btn:hover {
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 40px rgba(0, 255, 0, 0.8);
+}
